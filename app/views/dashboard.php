@@ -1,4 +1,4 @@
-<header class="header">
+<header class="menu">
     <div class="pushLeft">
         <a href="<?php echo route('dashboard') ?>" class="btn btn-primary active">Dashboard <i class="fas fa-tachometer-alt"></i></a>
         <a href="<?php echo route('dokumenty') ?>" class="btn btn-primary">Dokumnety <i class="fas fa-folder-open"></i></a>
