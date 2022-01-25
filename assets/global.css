@@ -6,6 +6,16 @@ body {
     margin: 0;
     padding: 0;
 }
+/* helpers */
+.flex {
+    display: flex;
+}
+.login-button{
+width: 100%;
+margin: 20px auto 0;
+padding: 15px 0!important;
+border:none;
+}
 /* button style */
 .btn {
     padding: 5px 10px;
@@ -13,12 +23,17 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
-.btn.btn-primary {
+.btn.btn-primary{
     color: var(--text-inverted);
     background: var(--primary);
 }
+.btn.btn-secondary{
+    color: var(--text-inverted);
+    background: var(--secondary);
+}
 .btn.btn-primary:hover {
     background: var(--secondary);
+    cursor: pointer;
 }
 .btn.active {
     background: var(--secondary);
@@ -35,7 +50,7 @@ header {
     background: var(--bg-secondary);
     color: var(--text-inverted);
     display: flex;
-   justify-content:space-between;
+    justify-content: space-between;
     padding: 20px;
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
 }
@@ -43,17 +58,56 @@ header .btn {
     margin: 0 10px;
 }
 
-
-
 /* login box */
 .loginBox {
     display: flex;
     justify-content: center center;
+    
 }
-.loginBox table {
+.loginBox .loginBoxWrapper {
     margin: 0 auto;
     border: 1px solid var(--support);
-    padding: 20px;
+    display: inline;
+    width: 500px;
+    padding: 40px;
+    background: var(--bg-secondary);
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.loginBox .loginBoxWrapper label,
+.loginBox .loginBoxWrapper table {
+    color: var(--text-inverted);
+}
+.loginBox .loginBoxWrapper label {
+    width: 150px;
+    position: relative;
+    top: 5px;
+}
+.loginBox .loginBoxWrapper input {
+    width: 100%;
+    padding: 10px;
+}
+.loginBox .loginBoxWrapper article {
+    display: inline-flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: flex-start;
+}
+.loginBoxWrapper .subSection{
+
+color: var(--text-inverted);
+margin: 10px auto;
+text-align: center;
+}
+.subSection a{
+display: block;
+margin: 0 auto;
+text-align: center;
+width: 50%;
+
 }
 
 /* framework */
@@ -61,6 +115,7 @@ section {
     padding: 20px;
 }
 
-.fas{
+/* icons */
+.fas {
     padding-left: 5px;
 }
