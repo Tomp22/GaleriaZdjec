@@ -46,7 +46,7 @@ a:visited {
 }
 
 /* header styles */
-header {
+header.menu {
     background: var(--bg-secondary);
     color: var(--text-inverted);
     display: flex;
@@ -56,6 +56,10 @@ header {
 }
 header .btn {
     margin: 0 10px;
+}
+header.welcome{
+
+text-align: center;
 }
 
 /* login box */
