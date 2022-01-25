@@ -14,17 +14,12 @@ $errorMessages = array();
 $routeParams = [];
 
 
-
-
-
 if(isset($_GET['_route']) && !empty($_GET['_route'])){
 	$route = rtrim($_GET['_route'],'/');
 	
 }else{
 	$route = 'index';
 }
-
-
 
 if(strpos($route,'/')){
 	$path = explode('/',$route);

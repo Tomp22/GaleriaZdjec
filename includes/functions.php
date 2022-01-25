@@ -21,7 +21,7 @@ function siteurl(){
 
 
 function assets($path){
-	return siteurl().'/public/assets/'.$path;
+	return siteurl().'assets/'.$path;
 }
 
 function route($path,$params=null,$signValue=null){
