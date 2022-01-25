@@ -10,6 +10,7 @@
 $_routes = [
 	
     
-    'welcome/{param}' => 'index'
+    'welcome/{param}' => 'index',
+    'dashboard/{param}' => 'dashboard',
 
 ];
