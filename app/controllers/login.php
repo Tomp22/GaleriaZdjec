@@ -10,8 +10,12 @@ if (isset($_POST['imie']) && isset($_POST['nazwisko']) && isset($_POST['plec']) 
                 if($plec === 't'){
                
                 echo 'Witam Panią, '.$imie ." " .$nazwisko .' w systemie.' ;  
-                }else {
+                redirectRoute('dashboard');
+
+            }else {
                 echo 'Witam Pana, '.$imie ." " .$nazwisko .' w systemie.' ; 
+                redirectRoute('dashboard');
+
                 }
             
         } else {
