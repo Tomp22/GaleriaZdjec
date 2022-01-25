@@ -12,5 +12,6 @@ $_routes = [
     
     'welcome/{param}' => 'index',
     'dashboard/{param}' => 'dashboard',
+    'zdjecia/{param}' => 'zdjecia',
 
 ];
