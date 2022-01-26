@@ -6,7 +6,7 @@
 
         </a>
     </div>
-    <div class="pushRight"><a href="<?php echo route('login') ?>" class="btn btn-primary">Wyloguj <i class="fas fa-sign-out-alt"></i>
+    <div class="pushRight"><a href="<?php echo route('index') ?>" class="btn btn-primary">Wyloguj <i class="fas fa-sign-out-alt"></i>
         </a>
 
 

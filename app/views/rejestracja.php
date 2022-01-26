@@ -30,7 +30,7 @@
 
      <div class="subSection">
                 <h4>Powrot do strony logowania</h4>
-                <a href="<?php echo route('login') ?>" class="btn btn-secondary second-login-button"> Login<i class="fas fa-chevron-circle-left"></i>
+                <a href="<?php echo route('index') ?>" class="btn btn-secondary second-login-button"> Login<i class="fas fa-chevron-circle-left"></i>
 
 </a>
 
