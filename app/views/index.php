@@ -4,7 +4,7 @@
 </header>
 
 <section>
-    <form method=POST action="zaloguj.php" class="loginBox">
+    <form method=POST class="loginBox">
         <div class="loginBoxWrapper">
             <article>
                 <label for="">Email</label>
@@ -14,7 +14,7 @@
                 <label for="">Haslo</label>
                 <input type=password name='haslo'>
             </article>
-
+            
             <button class=" btn btn-primary  login-button" type=submit>Login <i class="fas fa-sign-in-alt"></i>
             </button>
             <div class="subSection">
@@ -65,5 +65,5 @@
                 </table> -->
         </div>
     </form>
-
+    <?php if(isset($_SESSION['blad'])) echo $_SESSION['blad'] ?>
 </section>
