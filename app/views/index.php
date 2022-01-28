@@ -14,10 +14,11 @@
                 <input type=password name='haslo'>
             </article>
             <?php 
-            if(isset($_SESSION['blad'])) 
+            if(isset($_SESSION['blad']))
             {
-            echo $_SESSION['blad']; 
-            }
+                echo '<div class ="error">'.$_SESSION['blad'].'</div>';
+                unset($_SESSION['e_blad']);
+            } 
             ?>
             <button class=" btn btn-primary  login-button" type=submit>Login <i class="fas fa-sign-in-alt"></i>
             </button>

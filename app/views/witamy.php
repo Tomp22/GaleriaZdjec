@@ -65,5 +65,5 @@
                 </table> -->
         </div>
     </form>
-    <?php if(isset($_SESSION['blad'])) echo $_SESSION['blad'] ?>
+   
 </section>

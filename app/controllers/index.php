@@ -2,6 +2,7 @@
 
 if (isset($_POST['email']) && isset($_POST['haslo']))
 {
+    $wszystko_OK = true;
     require_once "db.php";
     $polaczenie = @new mysqli($host,$dbuser,$dbpass,$dbname);
 
@@ -10,6 +11,7 @@ if (isset($_POST['email']) && isset($_POST['haslo']))
     
     if($polaczenie->connect_errno!=0)
     {
+        $wszystko_OK=false;
         echo "Error: ".$polaczenie->connect_errno." Opis: ".$polaczenie->connect_error;;
     }
 	else
@@ -42,13 +44,15 @@ if (isset($_POST['email']) && isset($_POST['haslo']))
                     }
                     else
                     {
-                        $_SESSION['blad'] = '<span style="color:red">Nieprawdidlowy email lub haslo!</span>';   
+                        $wszystko_OK=false;
+                        $_SESSION['e_blad'] = '<span style="color:red">Nieprawdidlowy email lub haslo!</span>';   
                     }
 
                 } 
                 else
                 {
-                    $_SESSION['blad'] = '<span style="color:red">Nieprawdidlowy email lub haslo!</span>';
+                    $wszystko_OK=false;
+                    $_SESSION['e_blad'] = '<span style="color:red">Nieprawdidlowy email lub haslo!</span>';
                 }
             }
         
