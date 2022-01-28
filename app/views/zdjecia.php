@@ -4,7 +4,7 @@
         <a href="<?php echo route('dokumenty') ?>" class="btn btn-primary">Dokumnety <i class="fas fa-folder-open"></i></a>
         <a href="<?php echo route('zdjecia') ?>" class="btn btn-primary active">Zdjecia <i class="fas fa-camera"></i></a>
     </div>
-    <div class="pushRight"><a href="<?php echo route('login') ?>" class="btn btn-primary">Wyloguj <i class="fas fa-sign-out-alt"></i>
+    <div class="pushRight"><a href="<?php echo route('index') ?>" class="btn btn-primary">Wyloguj <i class="fas fa-sign-out-alt"></i>
         </a>
     </div>
 </header>

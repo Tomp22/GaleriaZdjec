@@ -12,5 +12,5 @@ $_routes = [
     'dokumenty/{param}' => 'dokumenty',
     'login/{param}' => 'login',
     'rejestracja/{param}' => 'rejestracja',
-
+    'witamy/{param}' => 'witamy',
 ];

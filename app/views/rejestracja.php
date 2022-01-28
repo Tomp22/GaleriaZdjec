@@ -1,29 +1,79 @@
 <section>
     <form method=POST class="loginBox">
+    <style>
+		.error
+		{
+			color:red;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+	</style>
         <div class="loginBoxWrapper">
 
             <article>
                 <label for="">Imie</label>
                 <input type=text name='imie'>
             </article>
+            <?php 
+            if(isset($_SESSION['e_imie']))
+            {
+                echo '<div class ="error">'.$_SESSION['e_imie'].'</div>';
+                unset($_SESSION['e_imie']);
+            } 
+            ?>
             <article>
                 <label for="">Nazwisko</label>
                 <input type=text name='nazwisko'>
             </article>
+            <?php 
+            if(isset($_SESSION['e_nazwisko']))
+            {
+                echo '<div class ="error">'.$_SESSION['e_nazwisko'].'</div>';
+                unset($_SESSION['e_nazwisko']);
+            } 
+            ?>
             <article>
                 <label for="">Email</label>
                 <input type=text name='email'>
             </article>
+            <?php 
+            if(isset($_SESSION['e_email']))
+            {
+                echo '<div class ="error">'.$_SESSION['e_email'].'</div>';
+                unset($_SESSION['e_email']);
+            } 
+            ?>
             <article>
                 <label for="">Haslo</label>
-                <input type=text name='haslo'>
+                <input type=password name='haslo1'>
             </article>
+            <?php 
+            if(isset($_SESSION['e_haslo']))
+            {
+                echo '<div class ="error">'.$_SESSION['e_haslo'].'</div>';
+                unset($_SESSION['e_haslo']);
+            } 
+            ?>
             <article>
-                <label for="">Plec</label>
-                <input type=radio name='plec' value="t">
-                <input type=radio name='plec' value="f">
+                <label for="">Powtorz haslo</label>
+                <input type=password name='haslo2'>
             </article>
-
+            <?php 
+            if(isset($_SESSION['e_haslo']))
+            {
+                echo '<div class ="error">'.$_SESSION['e_haslo'].'</div>';
+                unset($_SESSION['e_haslo']);
+            } 
+            ?>
+            <article>
+                <label for="">Subskrycja</label>
+                <input type=radio name='sub'
+                <?php if (isset($sub) && $sub=="Basic") echo "checked";?>
+                value="Basic">Basic
+                <input type=radio name='sub'
+                <?php if (isset($sub) && $sub=="VIP") echo "checked";?>
+                value="Vip">VIP
+            </article>
 
             <button class=" btn btn-primary  login-button" type=submit>Zaloz konto <i class="fas fa-user-check"></i>
             </button>
