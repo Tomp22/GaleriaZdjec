@@ -14,9 +14,9 @@
                 <input type=password name='haslo'>
             </article>
             <?php 
-            if(isset($_SESSION['blad']))
+            if(isset($_SESSION['e_blad']))
             {
-                echo '<div class ="error">'.$_SESSION['blad'].'</div>';
+                echo '<div class ="error">'.$_SESSION['e_blad'].'</div>';
                 unset($_SESSION['e_blad']);
             } 
             ?>
