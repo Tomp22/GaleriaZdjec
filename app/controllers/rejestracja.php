@@ -41,6 +41,8 @@ if (isset($_POST['imie']))
 		}
     $haslo_hash = password_hash($haslo1, PASSWORD_DEFAULT);
 
+    $sub = $_POST['sub'];
+
     require_once "db.php";
     mysqli_report(MYSQLI_REPORT_STRICT);
 
@@ -63,7 +65,7 @@ if (isset($_POST['imie']))
             if($ile_takich_maili>0)
             {
                 $wszystko_OK=false;
-			$_SESSION['e_email']="Istnieje juz konto przypisane do tego adresu email";
+			    $_SESSION['e_email']="Istnieje juz konto przypisane do tego adresu email";
             }
             
             if ($wszystko_OK == true)

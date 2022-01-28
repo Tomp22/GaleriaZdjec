@@ -16,10 +16,6 @@ if (isset($_POST['email']) && isset($_POST['haslo']))
     }
 	else
     {
-
-        
-        //$login = htmlentities($login, ENT_QUOTES, "UTF-8");
-        
             if ($rezultat = $polaczenie->query( 
             sprintf("SELECT * FROM uzytkownik WHERE email='%s'",
             mysqli_real_escape_string($polaczenie,$email))))
@@ -47,7 +43,6 @@ if (isset($_POST['email']) && isset($_POST['haslo']))
                         $wszystko_OK=false;
                         $_SESSION['e_blad'] = '<span style="color:red">Nieprawdidlowy email lub haslo!</span>';   
                     }
-
                 } 
                 else
                 {
