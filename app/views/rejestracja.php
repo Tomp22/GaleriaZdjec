@@ -65,14 +65,14 @@
                 unset($_SESSION['e_haslo']);
             } 
             ?>
-            <article>
+            <article class="rodzajSub">
                 <label for="">Subskrycja</label>
-                <input type=radio name='sub'
+                <input type=radio name='sub' class="one"
                 <?php if (isset($sub) && $sub=="Basic") echo "checked";?>
-                value="Basic">Basic
-                <input type=radio name='sub'
+                value="Basic"><span>Basic</span>
+                <input type=radio name='sub' class="two"
                 <?php if (isset($sub) && $sub=="VIP") echo "checked";?>
-                value="Vip">VIP
+                value="Vip"><span>VIP</span>
             </article>
 
             <button class=" btn btn-primary  login-button" type=submit>Zaloz konto <i class="fas fa-user-check"></i>
@@ -86,45 +86,6 @@
 
             </div>
         
-
-            <!-- <table border=0>
-                    <tr>
-                        <td>Imię</td>
-                        <td colspan=2>
-                            <input type=text name='imie' size= style='text-align: left'>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td>Nazwisko</td>
-                        <td colspan=2>
-                            <input type=text name='nazwisko' size=15 style='text-align: left'>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Płeć:</td>
-                        <td>Kobieta</td>
-                        <td><INPUT TYPE="radio" NAME="plec" value="t"></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Mężczyzna</td>
-                        <td><INPUT TYPE="radio" NAME="plec" value="f"> </td>
-                    </tr>
-
-                    <tr>
-                        <td>Hasło</td>
-                        <td colspan=2>
-                            <input type=password name='haslo' size=15 style='text-align:left'>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan=3>
-                            <input type=submit class="btn" value='Zaloguj się' style='width:200'>
-                       
-                        </td>
-                    </tr>
-                </table> -->
         </div>
     </form>
 

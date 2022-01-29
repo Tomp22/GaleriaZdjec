@@ -1,6 +1,6 @@
 <header class="welcome">
 <h1> Hello </h1>
-<h2>Witamy w aplikacji do zarzadzania dokumentami</h2>
+<h2>Witamy w aplikacji do zarządzania dokumentami</h2>
 </header>
 <section>
     <form method=POST class="loginBox">

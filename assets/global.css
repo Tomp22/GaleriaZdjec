@@ -10,11 +10,11 @@ body {
 .flex {
     display: flex;
 }
-.login-button{
-width: 100%;
-margin: 20px auto 0;
-padding: 15px 0!important;
-border:none;
+.login-button {
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 15px 0 !important;
+    border: none;
 }
 /* button style */
 .btn {
@@ -23,11 +23,11 @@ border:none;
     text-decoration: none;
     text-transform: uppercase;
 }
-.btn.btn-primary{
+.btn.btn-primary {
     color: var(--text-inverted);
     background: var(--primary);
 }
-.btn.btn-secondary{
+.btn.btn-secondary {
     color: var(--text-inverted);
     background: var(--secondary);
 }
@@ -57,16 +57,14 @@ header.menu {
 header .btn {
     margin: 0 10px;
 }
-header.welcome{
-
-text-align: center;
+header.welcome {
+    text-align: center;
 }
 
 /* login box */
 .loginBox {
     display: flex;
     justify-content: center center;
-    
 }
 .loginBox .loginBoxWrapper {
     margin: 0 auto;
@@ -76,7 +74,6 @@ text-align: center;
     padding: 40px;
     background: var(--bg-secondary);
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-
 }
 
 .loginBox .loginBoxWrapper label,
@@ -100,18 +97,16 @@ text-align: center;
     justify-items: center;
     align-items: flex-start;
 }
-.loginBoxWrapper .subSection{
-
-color: var(--text-inverted);
-margin: 10px auto;
-text-align: center;
+.loginBoxWrapper .subSection {
+    color: var(--text-inverted);
+    margin: 10px auto;
+    text-align: center;
 }
-.subSection a{
-display: block;
-margin: 0 auto;
-text-align: center;
-width: 50%;
-
+.subSection a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
 }
 
 /* framework */
@@ -122,4 +117,72 @@ section {
 /* icons */
 .fas {
     padding-left: 5px;
+}
+
+.loginBox .loginBoxWrapper article.rodzajSub{
+
+justify-content: start!important;
+vertical-align: center;
+justify-items: center;
+align-items: center;
+}
+
+.rodzajSub .one, .rodzajSub .two {
+ width: 20px!important;
+}
+.rodzajSub span {
+    color: var(--text-inverted) !important;
+}
+
+.tableSection{
+    display: flex;
+    justify-content: center;
+}
+.tabela{
+display: flex;
+flex-direction: row;
+}
+.tabela th, .tabela td{
+padding:12px 24px;
+
+}
+.tabela tr{
+    list-style: none;
+    padding: 12px 24px;
+    background: var(--secondary);
+    margin-right: 2px;
+    text-align: center;
+}
+.tabela .headers{
+
+    color: var(--text-inverted)!important;
+    background: var(--bg-secondary);
+}
+
+.dashboard{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: var(--support);
+    color: var(--text-inverted);
+}
+.dashboard ul{
+    list-style: none;
+}
+
+.dashboard small{
+    padding-left: 10px;
+    font-weight: 300;
+}
+.waterMark{
+display: flex;
+justify-content: center;
+font-size: 2rem;
+align-content: center;
+padding: 3rem 0;
+}
+.waterMark h1{
+
+opacity: 0.2;
+
 }
