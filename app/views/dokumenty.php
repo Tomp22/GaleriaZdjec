@@ -22,11 +22,11 @@ if ($result->num_rows > 0) {
     // output data of each row
 
     echo '<section class="tableSection"> <table class="tabela">
-        <tr class="headers"><th>ID Dokumnentu</th><th>Opis Dokumentu</th><th>Typ Dokumentu</th><th>Data Wystawienia</th><th>Data Modyfikacji</th> <th>Dokument Jest Aktywny</th> </tr>';
+        <tr class="headers"><th>ID Dokumnentu</th><th>Opis Dokumentu</th><th>Typ Dokumentu</th><th>Data Wystawienia</th><th>Data Modyfikacji</th> <th>Dokument Jest Aktywny</th><th>Edycja Dokumentu</th> </tr>';
 
     while ($r = $result->fetch_assoc()) {
 
-        echo "<tr><td>{$r["IdDokumentu"]}</td><td>{$r["OpisDokumentu"]}</td><td>{$r["TypDokumentu"]}</td><td>{$r["DataWstawienia"]}</td><td>{$r["DataModyfikacji"]}</td></td><td>{$r["CzyAktywny"]}</td></tr>";
+        echo "<tr><td>{$r["IdDokumentu"]}</td><td>{$r["OpisDokumentu"]}</td><td>{$r["TypDokumentu"]}</td><td>{$r["DataWstawienia"]}</td><td>{$r["DataModyfikacji"]}</td></td><td>{$r["CzyAktywny"]}</td><td><input type='submit' name='{$r["IdDokumentu"]}' value='Edytuj'> <input type='submit' name='{$r["IdDokumentu"]}' value='Usuń'></td></tr>";
     }
 
     echo '</table> </section>';
