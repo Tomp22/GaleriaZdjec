@@ -23,9 +23,21 @@
             <h3>Jesteś Użytkownikiem VIP/Basic  <small> - <?php echo $_SESSION['sub'] ?> </small> </h3>
         </li>
     </ul>
-
 </section>
-
 <section class="waterMark">
-<h1 >Tutaj Będzie Twój Dashobard Kontent </h1>
+<form action="" method="POST"> 
+<textarea name="tekst" value = "" rows="15" cols="80">
+    <?php 
+    if(file_exists('a.txt'))
+    {
+        $plik = file('a.txt');
+        foreach($plik as $linia)
+        echo $linia;
+    } 
+    ?>
+</textarea></br>
+<input type="submit">
+</form>
+</br>
+
 </section>

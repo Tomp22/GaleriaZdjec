@@ -12,5 +12,5 @@
 </header>
 
 <section class="waterMark">
-<h1 >Autor: Tomasz Prusak </h1>
+<h1 >Autor: Tomasz Prusak i Maciej Mroz </h1>
 </section>
